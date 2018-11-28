@@ -62,8 +62,8 @@ $subnet1NSGrule1 = New-AzureRmNetworkSecurityRuleConfig -Name 'Allow-HTTP-All' -
   -DestinationAddressPrefix * -DestinationPortRange 80
 
 # Create an NSG rule to allow RDP traffic from the Internet to Subnet1.
-$Subnet1NSGrule2 = New-AzureRmNetwork
-rotocol Tcp -Direction Inbound -Priority 200 `
+$Subnet1NSGrule2 = New-AzureRmNetworkSecurityRuleConfig -Name 'Allow-RDP' -Description 'Allow RDP' `
+  -Access Allow -Protocol Tcp -Direction Inbound -Priority 200 `
   -SourceAddressPrefix Internet -SourcePortRange * `
   -DestinationAddressPrefix * -DestinationPortRange 3389
 
