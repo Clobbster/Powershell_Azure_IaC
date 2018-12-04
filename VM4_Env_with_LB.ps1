@@ -10,7 +10,7 @@
 # 5. The required Subnet
 # 6. The required NICs for the VMs
 # 7. VMs 
-#      4 SiteCore servers
+#      4 servers
 # 8. VM Disk Extensions
 #
 ########################################################################################################################
