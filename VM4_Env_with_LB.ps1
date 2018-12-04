@@ -1,6 +1,6 @@
 ﻿########################################################################################################################
 # 
-# This script is meant to be used for the "RG-SiteCore-Dev" resource group
+# This script is meant to be used for the "" resource group
 # This particular script will create the following:
 #
 # 1. A Resource Group(RG). 
