@@ -111,19 +111,19 @@ $nic3Name = $nicList[2]
 $nic4Name = $nicList[3]
 
 # NIC1
-$IP1config = New-AzureRmNetworkInterfaceIpConfig -Name "IPConfig1" -PrivateIpAddressVersion IPv4 -PrivateIpAddress "10.1.0.10" -SubnetId "/subscriptions/68cf210d-efb0-4615-8b0f-20ae6c9ff0c3/resourceGroups/CRRG-PS-Test/providers/Microsoft.Network/virtualNetworks/CRVN-PS-Test/subnets/Subnet1"
+$IP1config = New-AzureRmNetworkInterfaceIpConfig -Name "IPConfig1" -PrivateIpAddressVersion IPv4 -PrivateIpAddress "10.1.0.10" -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/CRRG-PS-Test/providers/Microsoft.Network/virtualNetworks/CRVN-PS-Test/subnets/Subnet1"
 $nic1 = New-AzureRmNetworkInterface -Name $nic1Name -ResourceGroupName $rgName -Location $location -IpConfiguration $IP1config
 
 # NIC2
-$IP2config = New-AzureRmNetworkInterfaceIpConfig -Name "IPConfig2" -PrivateIpAddressVersion IPv4 -PrivateIpAddress "10.1.0.138" -SubnetId "/subscriptions/68cf210d-efb0-4615-8b0f-20ae6c9ff0c3/resourceGroups/CRRG-PS-Test/providers/Microsoft.Network/virtualNetworks/CRVN-PS-Test/subnets/Subnet2"
+$IP2config = New-AzureRmNetworkInterfaceIpConfig -Name "IPConfig2" -PrivateIpAddressVersion IPv4 -PrivateIpAddress "10.1.0.138" -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/CRRG-PS-Test/providers/Microsoft.Network/virtualNetworks/CRVN-PS-Test/subnets/Subnet2"
 $nic2 = New-AzureRmNetworkInterface -Name $nic2Name -ResourceGroupName $rgName -Location $location -IpConfiguration $IP2config
 
 # NIC3
-$IP3config = New-AzureRmNetworkInterfaceIpConfig -Name "IPConfig3" -PrivateIpAddressVersion IPv4 -PrivateIpAddress "10.1.1.10" -SubnetId "/subscriptions/68cf210d-efb0-4615-8b0f-20ae6c9ff0c3/resourceGroups/CRRG-PS-Test/providers/Microsoft.Network/virtualNetworks/CRVN-PS-Test/subnets/Subnet3"
+$IP3config = New-AzureRmNetworkInterfaceIpConfig -Name "IPConfig3" -PrivateIpAddressVersion IPv4 -PrivateIpAddress "10.1.1.10" -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/CRRG-PS-Test/providers/Microsoft.Network/virtualNetworks/CRVN-PS-Test/subnets/Subnet3"
 $nic3 = New-AzureRmNetworkInterface -Name $nic3Name -ResourceGroupName $rgName -Location $location -IpConfiguration $IP3config
 
 # NIC4
-$IP4config = New-AzureRmNetworkInterfaceIpConfig -Name "IPConfig4" -PrivateIpAddressVersion IPv4 -PrivateIpAddress "10.1.1.138" -SubnetId "/subscriptions/68cf210d-efb0-4615-8b0f-20ae6c9ff0c3/resourceGroups/CRRG-PS-Test/providers/Microsoft.Network/virtualNetworks/CRVN-PS-Test/subnets/Subnet4"
+$IP4config = New-AzureRmNetworkInterfaceIpConfig -Name "IPConfig4" -PrivateIpAddressVersion IPv4 -PrivateIpAddress "10.1.1.138" -SubnetId "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/CRRG-PS-Test/providers/Microsoft.Network/virtualNetworks/CRVN-PS-Test/subnets/Subnet4"
 $nic4 = New-AzureRmNetworkInterface -Name $nic4Name -ResourceGroupName $rgName -Location $location -IpConfiguration $IP4config
 
 ###########################################################
